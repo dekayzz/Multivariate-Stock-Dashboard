@@ -1,0 +1,8 @@
+shiny
+tensorflow
+pandas
+numpy
+matplotlib
+pandas_datareader
+yfinance
+scikit-learn

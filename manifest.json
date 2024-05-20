@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "locale": "en_US",
+    "python": {
+        "version": "3.8",
+        "package_manager": {
+            "name": "pip",
+            "version": "20.2.3",
+            "package_file": "requirements.txt"
+        }
+    },
+    "files": {
+        "app.py": {
+            "checksum": "md5:be14724995b86c634462fa9dcbb2de9c"
+        },
+        "keras_model.h5": {
+            "checksum": "md5:24e61c3ff91892c426cafd1b2feba3b2"
+        }
+    },
+    "entrypoint": "python app.py"
+}
