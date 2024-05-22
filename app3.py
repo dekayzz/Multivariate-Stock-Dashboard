@@ -53,15 +53,15 @@ def multistep_forecast_with_confidence(model, scaler, input_seq, n_steps, confid
     return predictions, lower_bounds, upper_bounds
 
 def main():
-    st.title("JKSE Price Prediction Dashboard")
+    st.title("JCI Index Projection Dashboard")
 
     # Tabs for different models
     tab1, tab2 = st.tabs(["Univariate Model", "Multivariate Model"])
 
     with tab1:
-        st.subheader("JKSE Price Prediction using Recurrent Neural Network")
+        st.subheader("JCI Index Projection using Recurrent Neural Network")
         n_days = st.slider("Number of days to forecast", min_value=1, max_value=30, value=10)
-        end_date = st.date_input("Select End Date", value=pd.to_datetime("2024-04-17"))
+        end_date = st.date_input("Select End Date", value=pd.to_datetime("2024-05-17"))
 
         if st.button("Predict"):
             start = "2004-01-01"
@@ -94,7 +94,7 @@ def main():
             st.pyplot(fig)
 
     with tab2:
-        st.subheader("Predict JKSE with Economic Predictors using Neural Network Model")
+        st.subheader("JCI Index Projection with Economic Indicators using Neural Network")
         # User inputs for the multivariate model
         input_data = {
             'dow_jones_industrial_index': st.number_input('Dow Jones Industrial Index', format="%.2f"),
